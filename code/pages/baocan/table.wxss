@@ -1,0 +1,71 @@
+/* pages/baocan/table.wxss */
+.table {
+  border: 0px solid darkgray;
+}
+.left-part{
+  display: flex;
+  width: 40%;
+  text-align: center;
+  justify-content: center;
+}
+.right-part{
+  display: flex;
+  width: 60%;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+}
+.date{
+  width: 30%;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+.dis-flex{
+  display: flex;
+  width: 100%;
+}
+.date-head{
+  justify-content: center;
+  text-align: center;
+  background: #3366FF;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}
+.td {
+   display: flex;
+    width:40%;
+    justify-content: center;
+    text-align: center;
+}
+.bg-w{
+  background: snow;
+}
+.bg-g{
+  background: #E6F3F9;
+}
+.not-display{
+  display: none;
+}
+.bg-b{
+  background: #3366FF;
+}
+.font-w{
+  color: #fff;
+}
+.th {
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+  background: #3366FF;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}

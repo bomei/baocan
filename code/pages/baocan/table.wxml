@@ -1,0 +1,56 @@
+<!--pages/baocan/table.wxml-->
+<view class="table">
+  <view class="tr bg-b font-w">
+    <view class='left-part'>
+      <view class="tr">日期</view>
+    </view>
+    <view class='right-part'>
+      <view class="tr">早</view>
+      <view class="tr">中</view>
+      <view class="tr">晚</view>
+    </view>
+  </view>
+  <block wx:for="{{listData}}" wx:key="{{code}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="left-part">{{item.date}}</view>
+      <view class='right-part'>
+        <checkbox-group bindchange='handlecheck' class='dis-flex'>
+          <view class="not-display">
+            <checkbox value="{{item.date}}" checked='true'></checkbox>
+          </view>
+          <view class="tr">
+            <checkbox value="{{item.date+'+m'}}"></checkbox>
+          </view>
+          <view class="tr">
+            <checkbox  value="{{item.date+'+l'}}"></checkbox>
+          </view>
+          <view class="tr">
+            <checkbox value="{{item.date+'+d'}}"></checkbox>
+          </view>
+        </checkbox-group>
+      </view>
+
+
+    </view>
+    <view class="tr" wx:else>
+      <view class="left-part">{{item.date}}</view>
+      <view class='right-part'>
+
+        <checkbox-group bindchange='handlecheck' class='dis-flex'>
+          <view class="not-display">
+            <checkbox value="{{item.date}}" checked='true'></checkbox>
+          </view>
+          <view class="tr">
+            <checkbox value="{{item.date+'+m'}}"></checkbox>
+          </view>
+          <view class="tr">
+            <checkbox value="{{item.date+'+l'}}"></checkbox>
+          </view>
+          <view class="tr">
+            <checkbox value="{{item.date+'+d'}}"></checkbox>
+          </view>
+        </checkbox-group>
+      </view>
+    </view>
+  </block>
+</view>

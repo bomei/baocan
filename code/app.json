@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/baocan/table",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/baocan/baocan"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

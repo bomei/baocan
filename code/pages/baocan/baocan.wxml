@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="map">
+    <map></map>
+  </view>
+</view>
